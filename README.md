@@ -22,6 +22,9 @@
 
 ## :rocket: Rotas
 
+
+### /settings
+
 ### POST
 
 - Response `201`
