@@ -1,10 +1,10 @@
-import { Router, Request, Response } from 'express'
-import { SettingsControlller } from '../controllers'
+import { Router } from 'express'
+import { SettingsController } from '../controllers'
 
 const router = Router()
-const settingsControlller = new SettingsControlller()
+const settingsController = new SettingsController()
 
-router.get('/', settingsControlller.find)
-router.post('/', settingsControlller.create)
+router.get('/', settingsController.find)
+router.post('/', settingsController.create)
 
 export default router
