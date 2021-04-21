@@ -1,8 +1,8 @@
-import { Router } from 'express'
-import settings from './SettingsRoutes'
+import settingRoutes from './SettingsRoutes'
+import userRoutes from './UsersRoutes'
+import messageRoutes from './MessagesRoutes'
 
-const router = Router()
-
-router.use('/settings', settings)
-
-export default router
+export { router } from './routes'
+export { userRoutes }
+export { settingRoutes }
+export { messageRoutes }
