@@ -1,1 +1,3 @@
-export { SettingsControlller } from './SettingsControlller'
+export { SettingsController } from './SettingsController'
+export { UsersController } from './UsersController'
+export { MessagesController } from './MessagesController'
