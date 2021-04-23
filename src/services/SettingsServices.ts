@@ -32,6 +32,14 @@ class SettingsService {
   async find() {
     return await this.repository.find()
   }
+
+  async findByUserName(userName: string) {
+    return await this.repository.findOne({ userName })
+  }
+
+  async update(userName: string, chat: boolean) {
+    return await this.repository.update(userName, { chat })
+  }
 }
 
 export { SettingsService }
