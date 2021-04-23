@@ -23,8 +23,12 @@ class UsersServices {
     return await this.repository.save(user)
   }
 
-  async findById(id:string) {
+  async findById(id: string) {
     return await this.repository.findOne(id)
+  }
+
+  async findByEmail(email: string) {
+    return await this.repository.findOne({ email })
   }
 }
 
