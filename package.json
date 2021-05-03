@@ -4,6 +4,7 @@
   "description": "",
   "main": "./src/server.ts",
   "scripts": {
+    "live-server": "live-server ./public/html/client.html",
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules ./src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
     "migration-create": "ts-node-dev ./node_modules/typeorm/cli.js migration:create -n",
@@ -30,6 +31,7 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
+    "mustache": "^4.2.0",
     "reflect-metadata": "^0.1.13",
     "socket.io": "^4.0.1",
     "socket.io-client": "^4.0.1",
