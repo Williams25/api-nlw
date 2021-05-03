@@ -51,5 +51,11 @@ io.on('connect', async (socket: Socket) => {
         })
       }
     }
+
+    const allMessages = await messages.listByUserId(String(userExists?.id))
+
+    // socket.emit('client_list_all_messages', allMessages, (call, err) => {
+      
+    // })
   })
 })
