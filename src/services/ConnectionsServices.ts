@@ -23,7 +23,27 @@ class ConnectionsServices {
   }
 
   async findByUserId(user_id: string) {
-    return await this.repository.findOne({ user_id })
+    const user = await this.repository.findOne({ user_id })
+    return user
+  }
+
+  async findAllWithoutAdmin() {
+    const connection = await this.repository.find({
+      where: {
+        admin_id: null
+      },
+      relations: ['user']
+    })
+    return connection
+  }
+
+  async findBySocketId(socketId: string) {
+    const connection = await this.repository.findOne({ where: { socket_id: socketId } })
+    return connection
+  }
+
+  async update(userId: string, adminId: string) {
+    return await this.repository.update({ user_id: userId }, { admin_id: adminId })
   }
 }
 
