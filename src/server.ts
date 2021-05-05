@@ -1,6 +1,7 @@
 import dotenv from 'dotenv'
 import app from './app'
 import './websocket/client'
+import './websocket/admin'
 
 const { http } = app
 dotenv.config()
