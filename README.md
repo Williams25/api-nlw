@@ -17,7 +17,7 @@
 
 - Faça um clone desse repositório utilizando o camando `https://github.com/Williams25/api-nlw.git`
 - Entre na pasta do projeto `cd api-nlw` e logo apos `code .`
-- Rode `yarn install` para intalar as dependencias
+- Rode `yarn` para instalar as dependencias
 - Rode `yarn dev` para iniciar o servidor
 - Apôs subir o servidor entre na rota `html/client.html` para ter acesso ao chat de cliente e para admin entre na rota `html/admin.html`
 
